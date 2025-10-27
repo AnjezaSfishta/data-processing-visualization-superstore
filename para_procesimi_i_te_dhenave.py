@@ -50,3 +50,21 @@ df = df.drop_duplicates()
 df_cleaned_no_outliers = df.copy()
 df_cleaned_no_outliers.to_csv("cleaned_data_without_outliers.csv", index=False)
 print("✅ Dataset i pastruar (pa outliers) ruhet si 'cleaned_data_without_outliers.csv'")
+
+# 8. Kodimi i variablave kategorikë (Label Encoding)
+le = LabelEncoder()
+for col in cat_cols:
+    df[col] = le.fit_transform(df[col])
+
+
+# 9. Diskretizimi i Sales (ndarje në 5 grupe)
+kbins = KBinsDiscretizer(n_bins=5, encode='ordinal', strategy='quantile')
+df['Sales_binned'] = kbins.fit_transform(df[['Sales']])
+
+# 10. Binarizimi i Sales (0 nëse < medianës, 1 ndryshe)
+binarizer = Binarizer(threshold=df['Sales'].median())
+df['Sales_binary'] = binarizer.fit_transform(df[['Sales']])
+
+# 11. Standardizimi i variablave numerikë
+scaler = StandardScaler()
+df[['Row ID', 'Postal Code', 'Sales']] = scaler.fit_transform(df[['Row ID', 'Postal Code', 'Sales']])
