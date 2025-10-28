@@ -1,4 +1,7 @@
 import pandas as pd
+import numpy as np
+from sklearn.preprocessing import LabelEncoder, StandardScaler, KBinsDiscretizer, Binarizer
+from sklearn.decomposition import PCA
 
 # 1. Leximi i datasetit
 df = pd.read_csv("superstore.csv")
@@ -68,3 +71,25 @@ df['Sales_binary'] = binarizer.fit_transform(df[['Sales']])
 # 11. Standardizimi i variablave numerikë
 scaler = StandardScaler()
 df[['Row ID', 'Postal Code', 'Sales']] = scaler.fit_transform(df[['Row ID', 'Postal Code', 'Sales']])
+
+
+# 12. Reduktimi i dimensionit me PCA (mbajmë 2 komponentë kryesorë)
+pca = PCA(n_components=2)
+pca_result = pca.fit_transform(df[['Row ID', 'Postal Code', 'Sales']])
+df['PCA1'] = pca_result[:,0]
+df['PCA2'] = pca_result[:,1]
+
+# 13. Mostrimi (10% të dataset-it)
+df_sample = df.sample(frac=0.1, random_state=42)
+print("\nShape i mostrës (10%):", df_sample.shape)
+
+# 14. Agregimi: shuma e Sales sipas Category dhe Region
+df_agg = df.groupby(['Category', 'Region'])['Sales'].sum().reset_index()
+print("\nAgregimi i Sales sipas Category dhe Region:")
+print(df_agg.head())
+
+# Ruajtja e dataset-it të pastruar dhe të transformuar në një CSV të ri
+df.to_csv("train_cleaned.csv", index=False)
+print("\n✅ Dataset-i i pastruar u ruajt si 'train_cleaned.csv'")
+print("\nDataset final pas përpunimit:")
+print(df.head())
