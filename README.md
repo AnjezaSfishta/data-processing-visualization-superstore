@@ -7,7 +7,7 @@
 **University of Prishtina**  
 **Faculty of Computer and Software Engineering**  
 Master’s Program in **Computer and Software Engineering**  
-Course: **Artificial Intelligence**
+Course: **Data preparation and visualization**
 
 ## Professor
 
