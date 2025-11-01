@@ -5,6 +5,7 @@
 
 **Universiteti i Prishtinës**  
 **Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike**  
+Programi i Masterit në **Inxhinieri Elektrike dhe Kompjuterike**  
 Lënda: **Përgatitja dhe vizualizimi i të dhënave**
 
 
