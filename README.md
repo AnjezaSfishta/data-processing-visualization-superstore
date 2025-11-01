@@ -7,6 +7,7 @@
 **Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike**  
 Lënda: **Përgatitja dhe vizualizimi i të dhënave**
 
+<br>
 ## Profesori
 - **Mergim Hoti**
 ## Student-ja
