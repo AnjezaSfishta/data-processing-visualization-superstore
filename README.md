@@ -10,7 +10,7 @@ Lënda: **Përgatitja dhe vizualizimi i të dhënave**
 
 
 ## Profesori
-- **Mergim Hoti**
+- **Mërgim Hoti**
 ## Student-ja
 - **Anjeza Sfishta**
 
