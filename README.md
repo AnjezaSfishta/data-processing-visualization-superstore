@@ -68,3 +68,14 @@ Metodat e përdorura:
 
 ![Isolation Forest](images/isolation_forest.png)  
 
+### Pairplot për kolonat numerike
+
+Ky grafik tregon shpërndarjen e kolonave numerike dhe lidhjet midis tyre.  
+- Secila kolonë shfaqet me një **grafik që tregon sa shpërndarë janë vlerat e saj**.  
+- Për çdo kombinim të dy kolonave numerike shfaqet një **scatter plot**, që ndihmon të shihet **si lidhen ato midis tyre**.  
+
+Ky vizualizim ndihmon të identifikohen **modelet dhe marrëdhëniet** në të dhëna përpara analizave të mëtejshme.
+
+![Pairplot](images/pairplot.png)  
+
+
