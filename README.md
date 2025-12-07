@@ -67,5 +67,4 @@ Metodat e përdorura:
 ### Vizualizimi i detektimit te Outlier-ëve me Isolation Forest
 
 ![Isolation Forest](images/isolation_forest.png)  
-*Detektimi i Outliereve me Isolation Forest*
 
