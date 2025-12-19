@@ -1,81 +1,163 @@
+<table border="0">
+ <tr>
+    <td style="width:300px; vertical-align:middle; text-align:center;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/University_of_Prishtina_logo.svg" 
+           alt="University Logo" 
+           style="width:250px; height:auto;" />
+    </td>
+    <td style="vertical-align:middle; padding-left:20px;">
+      <h2><strong>Universiteti i Prishtinës</strong></h2>
+      <h3>Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike</h3>
+      <p>Inxhinieri Kompjuterike dhe Softuerike – Programi Master</p>
+      <p><strong>Lënda:</strong> Përgatitja dhe Vizualizimi i të Dhënave</p>
+    </td>
+ </tr>
+</table>
+
+---
+
 # Data Processing and Visualization: Superstore Sales Overview
 
+## Përshkrim i përgjithshëm i projektit
+Ky projekt realizohet në kuadër të lëndës **“Përgatitja dhe Vizualizimi i të Dhënave”** dhe ka për qëllim përgatitjen, pastrimin, transformimin dhe analizën e të dhënave të shitjeve duke ndjekur faza të strukturuara të punës në Data Science.
 
-<img src="https://github.com/user-attachments/assets/9002855f-3f97-4b41-a180-85d1e24ad34a" alt="University Logo" width="150" align="right"/>
+Projekti fokusohet në:
+- Para-procesimin e të dhënave
+- Trajtimin e vlerave mungese dhe duplikateve
+- Transformimin dhe krijimin e veçorive të reja
+- Diskretizimin, binarizimin dhe standardizimin
+- Detektimin dhe mënjanimin e vlerave përjashtuese (outliers)
+- Vizualizimin dhe eksplorimin multivariante të të dhënave
 
-**Universiteti i Prishtinës**  
-**Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike**  
-Programi i Masterit në **Inxhinieri Elektrike dhe Kompjuterike**  
-Lënda: **Përgatitja dhe vizualizimi i të dhënave**
+---
 
+## Tema e Projektit
+**Analiza e të dhënave të shitjeve – Superstore Dataset**
 
-## Profesori
-- **Mërgim Hoti**
-## Student-ja
-- **Anjeza Sfishta**
+---
 
-# Data Processing and Visualization: Superstore Sales Overview  
+## Informacion për studenten
+- **Studentja:** Anjeza Sfishta  
+- **Lënda:** Përgatitja dhe Vizualizimi i të Dhënave  
 
-Ky repository përdoret për qëllime studimore në fushën e **Përgatitjes dhe Vizualizimit të të Dhënave**, duke analizuar të dhënat e shitjeve të dataset-it **Superstore**.  
-Projekti ka për qëllim përgatitjen, pastrimin, transformimin dhe vizualizimin e të dhënave për të nxjerrë njohuri mbi shitjet, rajonet, produktet dhe segmentet e klientëve.
-
+---
 
 ## Përshkrimi i Dataset-it
+Dataset-i **Superstore Sales** është marrë nga një burim publik (**Kaggle**) dhe përmban të dhëna të shitjeve të simuluara për tregun e Shteteve të Bashkuara të Amerikës.
 
-Dataset-i **Superstore Sales** është marrë nga një burim publik (Kaggle) dhe përmban të dhëna të shitjeve të simuluara për tregun e **Shteteve të Bashkuara të Amerikës**.  
-Edhe pse nuk është 100% real, ai është një **dataset demonstrues** i ndërtuar për analiza të biznesit dhe trajnime në fushën e data science.
+Edhe pse nuk është plotësisht real, dataset-i përdoret gjerësisht për analiza të biznesit dhe trajnime në fushën e **Data Science** dhe **Business Analytics**.
 
-- Madhësia: **rreth 2.3 MB**  
-- Numri i kolonave: **18**  
-- Përmbajtja përfshin:
-  - Informacione për **shtete, qytete, rajone dhe kode postare**  
-  - Të dhëna për **produktet, kategoritë, klientët dhe segmentet**  
+| Atributi | Detaji |
+|--------|--------|
+| **Emri i Dataset-it** | Superstore Sales Dataset |
+| **Burimi** | Kaggle |
+| **Madhësia** | ~2.3 MB |
+| **Numri i kolonave** | 18 |
+| **Përmbajtja** | Shitje, produkte, klientë, rajone, kategori, data porosie dhe dërgese |
 
-## Rezultatet e Pjesës I – Para-Procesimi
+Dataset-i përfshin:
+- Informacione për shtete, qytete, rajone dhe kode postare  
+- Të dhëna për produktet, kategoritë dhe nën-kategoritë  
+- Segmentet e klientëve dhe mënyrat e dërgimit  
 
-Në këtë pjesë u kryen hapat kryesorë të përgatitjes së të dhënave për analizë:  
+## Faza e parë - Para-procesimi i të dhënave 
 
-1. **Ngarkimi dhe inspektimi i dataset-it** – shikimi i rreshtave të parë, tipeve të kolonave dhe vlerave të munguar.  
-2. **Pastrimi i të dhënave** – heqja e duplikateve, trajtimi i vlerave të zbrazëta dhe konvertimi i kolonave të datës në format të saktë.  
-3. **Diskretizimi, binarizimi dhe standardizimi** – kolonat numerike u normalizuan për analiza të mëtejshme.  
-4. **Agregimi dhe mostrimi** – u krijuan statistika përmbledhëse, mesatare dhe total sipas rajoneve, kategorive dhe segmenteve të klientëve.  
-5. **Reduktimi i dimensioneve me PCA** – u përdor PCA për të vizualizuar shpërndarjen e të dhënave dhe për të identifikuar trende kryesore.  
-6. **Krijimi i veçorive të reja** – u shtua kolona `Delivery_Days` për të matur kohën e dërgesës.
+Qëllimi i kësaj faze është përgatitja e dataset-it për analiza të mëtejshme duke siguruar cilësi, konsistencë dhe strukturë të përshtatshme të të dhënave.
 
-### Shembuj Vizualizimesh nga Pjesa I
+*Rezultati përfundimtar është një dataset i  pastër dhe i gatshëm për përdorim në fazën e dytë të projektit.*
 
-![Shpërndarja e Sales](images/sales_distribution.png)  
-*Shpërndarja e kolonës `Sales` pas standardizimit*
+Hapat e fazes se pare:
 
-![Mesatarja e Shitjeve sipas Rajonit](images/region_sales.png)  
-*Mesatarja e shitjeve sipas rajoneve*
+1. Importimi i librarive 
 
-## Pjesa II – Detektimi i Outlier-ëve dhe Analiza e Avancuar
+Është bere importimi i librarive te duhura për përpunimin, analizën dhe vizualizimin e të dhënave.
 
-Pjesa II fokusohet në **detektimin, vizualizimin dhe mënjanimin e outlier-ëve** duke përdorur metoda të ndryshme, dhe eksplorimin multivariante të dataset-it të pastruar.
+<img width="285" height="68" alt="image" src="https://github.com/user-attachments/assets/79695911-3a74-4ced-850f-529ecce2c259" />
 
-### 1. Detektimi i Outlier-ëve
+2. Identifikimi i Tipeve të të Dhënave
 
-Metodat e përdorura:
+Në këtë hap janë analizuar llojet e të dhënave për secilën kolonë për të siguruar përputhshmëri dhe përdorim korrekt në analizat e mëtejshme.
 
-- **IQR (Interquartile Range)** – identifikon vlerat që janë shumë larg kufijve 25%-75%.  
-- **Z-score** – vlerat që janë më shumë se 3 standard deviations larg mesatares.  
-- **Grubbs Test** – zbulon outlier-in më ekstrem për kolonën `Sales`.  
-- **Isolation Forest** – metodë e avancuar për të identifikuar outlier-ët në mënyrë automatike.
+<img width="505" height="607" alt="image" src="https://github.com/user-attachments/assets/d4cae1da-98c2-4f19-ba3b-e336960b5de7" />
 
+3.Identifikimi i Vlerave Null
 
-### Vizualizimi i detektimit te Outlier-ëve me Isolation Forest
+Figura më poshtë paraqet vizualizimin e vlerave të zbrazëta në dataset para fazës përfundimtare të pastrimit. Vërehet se mungesat janë të përqendruara kryesisht në kolonat Order Date dhe Ship Date, si pasojë e konvertimit të vlerave të pavlefshme në NaT.
+<img width="840" height="549" alt="image" src="https://github.com/user-attachments/assets/960e3066-c16e-4a69-8724-ec86552d7fd3" />
 
-![Isolation Forest](images/isolation_forest.png)  
+4. Trajtimi vlerave Null
 
-### Pairplot për kolonat numerike
+Pas identifikimit të vlerave të zbrazëta, u aplikuan teknika të përshtatshme për trajtimin e tyre. Në kolonën Sales, vlerat mungese u zëvendësuan me median për të shmangur ndikimin e vlerave ekstreme. Ndërsa për kolonat Order Date dhe Ship Date, rreshtat që përmbanin data të pavlefshme (NaT) u hoqën, pasi këto të dhëna janë thelbësore për analizat kohore dhe krijimin e veçorive të reja. Ky proces rezultoi në një dataset më të qëndrueshëm dhe pa mungesa kritike të të dhënave.
 
-Ky grafik tregon shpërndarjen e kolonave numerike dhe lidhjet midis tyre.  
-- Secila kolonë shfaqet me një **grafik që tregon sa shpërndarë janë vlerat e saj**.  
-- Për çdo kombinim të dy kolonave numerike shfaqet një **scatter plot**, që ndihmon të shihet **si lidhen ato midis tyre**.  
-
-Ky vizualizim ndihmon të identifikohen **modelet dhe marrëdhëniet** në të dhëna përpara analizave të mëtejshme.
-
-![Pairplot](images/pairplot.png)  
+<img width="643" height="67" alt="image" src="https://github.com/user-attachments/assets/4f6721a9-c9b5-400f-a88f-0ea3939d1006" />
 
 
+5. Diskretizimi, Binarizimi dhe Standardizimi
+
+Fillimisht, vlerat e shitjeve janë standardizuar për t’i sjellë në një shkallë të përbashkët (me mesatare 0 dhe devijim standard 1).
+Më pas, kolona Sales është diskretizuar në katër intervale (Sales_binned), duke kategorizuar nivelet e shitjeve nga më të ulëtat tek më të lartat. Gjithashtu, është krijuar kolona binare Sales_binary, ku vlera 1 përfaqëson shitje mbi mesatare, ndërsa vlera 0 shitje nën mesatare.
+
+<img width="404" height="234" alt="image" src="https://github.com/user-attachments/assets/74115982-507a-4899-8f03-d9a43da1a868" />
+
+
+6.Reduktimi i dimensioneve me PCA
+
+PCA (**Principal Component Analysis**) është përdorur për të reduktuar dimensionet e të dhënave dhe për të vizualizuar strukturën e tyre në një hapësirë me më pak komponentë.Shpërndarja e vlerave tregon se shumica e porosive janë të përqendruara në vlera të ulëta, ndërsa ekzistojnë disa vlera më të larta që kontribuojnë në variancën totale.
+
+<img width="850" height="547" alt="image" src="https://github.com/user-attachments/assets/d79fa93c-9370-41b1-bee3-500ffbf240dc" />
+
+
+7.Mostrim dhe Agregim i të Dhënave
+
+Në këtë seksion do të kryejmë disa analiza përmbledhëse duke përdorur funksione të tilla si:
+- `groupby()` për të grupuar të dhënat sipas kategorive ose rajoneve
+- `agg()` për të llogaritur mesatare, total dhe numërime
+- `sample()` për të marrë mostra të rastësishme nga dataset-i
+
+Këto analiza ndihmojnë për të kuptuar shpërndarjen e shitjeve dhe fitimeve sipas rajonit, kategorisë ose segmentit të klientit.
+Disa nga rezultatet e agregimit:
+
+<img width="782" height="195" alt="image" src="https://github.com/user-attachments/assets/8e25dd5b-2d48-4422-b357-13aeb7393863" />
+<img width="453" height="220" alt="image" src="https://github.com/user-attachments/assets/a03aabb3-c3d7-4212-bd78-6e038a06eff3" />
+
+---
+
+## Faza e dytë – Detektimi i Përjashtuesve dhe Eksplorimi i të Dhënave
+
+Në këtë fazë fokusi është në identifikimin dhe trajtimin e **outlier-ëve** për të përmirësuar cilësinë e analizave.
+
+### Metodat e përdorura për detektimin e outlier-ëve:
+- **IQR (Interquartile Range)** – bazuar në kuartile dhe shpërndarjen e të dhënave  
+- **Z-score** – bazuar në devijimin nga mesatarja \([-3, 3]\)  
+- **Grubbs’ Test** – identifikim statistikor i outlier-ëve individualë  
+- **Isolation Forest** – algoritëm i mësimit makinerik për analiza multivariante  
+
+Këto metoda janë përdorur për krahasim dhe analizë të rezultateve ndërmjet tyre.
+
+
+####  Rezultatet e detektimit te outliers
+
+<img width="420" height="35" alt="image" src="https://github.com/user-attachments/assets/34098459-ca93-404c-8bc0-92a400728d51" /><br>
+
+<img width="454" height="38" alt="image" src="https://github.com/user-attachments/assets/2d3d79e4-90d1-49ef-b102-649d8da2355d" /><br>
+
+<img width="454" height="34" alt="image" src="https://github.com/user-attachments/assets/1582c699-2f49-44d0-80b6-38d22cc02c1a" /><br>
+
+
+### Menjanimi i outliereve
+
+Isolation Forest u përdor si metoda kryesore për mënjanimin e vlerave jonormale, pasi është e përshtatshme për të dhëna multivariante dhe nuk varet nga supozime të forta statistikore mbi shpërndarjen e të dhënave.
+
+
+### 4. Analiza e karakteristikave unike të metodës
+
+Si shembull ilustrues është marrë analiza e shitjeve në funksion të kohëzgjatjes së dërgesës (Delivery_Days), pasi kjo veçori paraqet një faktor të rëndësishëm operacional që mund të ndikojë në vlerën e shitjeve dhe përvojën e klientit. Kohëzgjatja e dërgesës lidhet drejtpërdrejt me efikasitetin e logjistikës dhe shpesh përdoret për të vlerësuar performancën e shërbimit.
+
+Siç paraqitet në figurë, pas mënjanimit të vlerave përjashtuese (outlier-ëve) me metodën Isolation Forest, të dhënat shfaqen më të qëndrueshme dhe pa devijime ekstreme. Çdo pikë përfaqëson një porosi individuale, ku vërehet se shitjet janë të shpërndara në mënyrë jo-lineare përgjatë vlerave të ndryshme të Delivery_Days, duke sugjeruar se nuk ekziston një lidhje e fortë lineare ndërmjet këtyre dy variablave.
+
+<img width="765" height="482" alt="image" src="https://github.com/user-attachments/assets/386e1384-fb5d-4da0-9601-e815d49b5410" />
+
+---
+
+## Konkluzioni
+Pas procesit të pastrimit dhe mënjanimit të vlerave përjashtuese, dataset-i i shitjeve paraqet një strukturë më të qëndrueshme dhe më përfaqësuese të sjelljes reale të porosive duke qene më i besueshëm për analiza të mëtejshme, duke eliminuar porositë ekstreme që nuk përfaqësojnë sjelljen tipike të procesit të shitjes dhe dërgesës, ndërkohë që ruhen vlerat e larta të shitjeve që janë pjesë e performancës normale të bizneseve dhe rajoneve të ndryshme. Kjo qasje siguron që “outlier”-ët e vërtetë (raste jashtëzakonisht të rralla ose anomale) të ndahen nga shitjet e larta por të zakonshme, duke mundësuar një analizë më reale dhe më të saktë të të dhënave të Superstore.
