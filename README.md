@@ -157,6 +157,6 @@ Siç paraqitet në figurë, pas mënjanimit të vlerave përjashtuese (outlier-�
 Pas procesit të pastrimit dhe mënjanimit të vlerave përjashtuese, dataset-i i shitjeve paraqet një strukturë më të qëndrueshme dhe më përfaqësuese të sjelljes reale të porosive duke qene më i besueshëm për analiza të mëtejshme, duke eliminuar porositë ekstreme që nuk përfaqësojnë sjelljen tipike të procesit të shitjes dhe dërgesës, ndërkohë që ruhen vlerat e larta të shitjeve që janë pjesë e performancës normale të bizneseve dhe rajoneve të ndryshme.
 
 
-## Authors
+## Author
 - *Anjeza Sfishta*
 
