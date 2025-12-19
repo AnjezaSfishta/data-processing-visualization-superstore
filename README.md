@@ -9,7 +9,7 @@
       <h2><strong>Universiteti i Prishtinës</strong></h2>
       <h3>Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike</h3>
       <p>Inxhinieri Kompjuterike dhe Softuerike – Programi Master</p>
-      <p><strong>Lënda:</strong> Përgatitja dhe Vizualizimi i të Dhënave</p>
+      <p><strong>Profesor:</strong> Dr.Sc. Mërgim H. HOTI</p>
     </td>
  </tr>
 </table>
@@ -33,12 +33,6 @@ Projekti fokusohet në:
 
 ## Tema e Projektit
 **Analiza e të dhënave të shitjeve – Superstore Dataset**
-
----
-
-## Informacion për studenten
-- **Studentja:** Anjeza Sfishta  
-- **Lënda:** Përgatitja dhe Vizualizimi i të Dhënave  
 
 ---
 
@@ -160,4 +154,9 @@ Siç paraqitet në figurë, pas mënjanimit të vlerave përjashtuese (outlier-�
 ---
 
 ## Konkluzioni
-Pas procesit të pastrimit dhe mënjanimit të vlerave përjashtuese, dataset-i i shitjeve paraqet një strukturë më të qëndrueshme dhe më përfaqësuese të sjelljes reale të porosive duke qene më i besueshëm për analiza të mëtejshme, duke eliminuar porositë ekstreme që nuk përfaqësojnë sjelljen tipike të procesit të shitjes dhe dërgesës, ndërkohë që ruhen vlerat e larta të shitjeve që janë pjesë e performancës normale të bizneseve dhe rajoneve të ndryshme. Kjo qasje siguron që “outlier”-ët e vërtetë (raste jashtëzakonisht të rralla ose anomale) të ndahen nga shitjet e larta por të zakonshme, duke mundësuar një analizë më reale dhe më të saktë të të dhënave të Superstore.
+Pas procesit të pastrimit dhe mënjanimit të vlerave përjashtuese, dataset-i i shitjeve paraqet një strukturë më të qëndrueshme dhe më përfaqësuese të sjelljes reale të porosive duke qene më i besueshëm për analiza të mëtejshme, duke eliminuar porositë ekstreme që nuk përfaqësojnë sjelljen tipike të procesit të shitjes dhe dërgesës, ndërkohë që ruhen vlerat e larta të shitjeve që janë pjesë e performancës normale të bizneseve dhe rajoneve të ndryshme.
+
+
+## Authors
+- *Anjeza Sfishta*
+
