@@ -154,7 +154,9 @@ Siç paraqitet në figurë, pas mënjanimit të vlerave përjashtuese (outlier-�
 ---
 ## FAZA III – Vizualizimi i të Dhënave
 
-Vizualizimi i të dhënave në këtë projekt është realizuar përmes **Microsoft Power BI**, duke përdorur **vizualizime plotësisht dinamike dhe interaktive**. Të gjitha grafiqet reagojnë në kohë reale ndaj **slicers** dhe **filtrave**, duke mundësuar analizë fleksibile dhe shumë-dimensionale të të dhënave.
+Vizualizimi i të dhënave në këtë projekt është realizuar përmes **Microsoft Power BI**, duke përdorur **vizualizime plotësisht dinamike dhe interaktive**. Të dhënat janë importuar drejtpërdrejt në Power BI nga fajlli **`cleaned_superstore_iso.csv`**, i cili përfaqëson dataset-in e pastruar pas përfundimit të **Fazës II**, përfshirë trajtimin e vlerave mungese, duplikateve dhe mënjanimin e **outliers**.
+Të gjitha grafiqet reagojnë në kohë reale ndaj **slicers** dhe **filtrave**, duke mundësuar analizë fleksibile dhe shumë-dimensionale të të dhënave.
+
 
 ### 1. Vizualizimi i Shitjeve sipas Rajonit
 
