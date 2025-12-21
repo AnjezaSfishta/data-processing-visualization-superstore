@@ -152,9 +152,63 @@ Siç paraqitet në figurë, pas mënjanimit të vlerave përjashtuese (outlier-�
 <img width="765" height="482" alt="image" src="https://github.com/user-attachments/assets/386e1384-fb5d-4da0-9601-e815d49b5410" />
 
 ---
+## FAZA III – Vizualizimi i të Dhënave
+
+Vizualizimi i të dhënave në këtë projekt është realizuar përmes **Microsoft Power BI**, duke përdorur **vizualizime plotësisht dinamike dhe interaktive**. Të gjitha grafiqet reagojnë në kohë reale ndaj **slicers** dhe **filtrave**, duke mundësuar analizë fleksibile dhe shumë-dimensionale të të dhënave.
+
+### 1. Vizualizimi i Shitjeve sipas Rajonit
+
+Është përdorur një **bar chart dinamik** për të paraqitur **Total Sales (Sales_original)** sipas rajoneve (West, East, Central, South). Ky vizualizim mundëson krahasimin e performancës së shitjeve ndërmjet rajoneve dhe reagon ndaj filtrimit sipas segmentit dhe periudhës kohore.
+
+<img width="418" height="277" alt="image" src="https://github.com/user-attachments/assets/38bb801e-8b77-41a4-b81c-1a2804cd14de" />
+
+
+### 2. Vizualizimi i Shitjeve sipas Kategorisë
+
+Është përdorur një **bar chart horizontal dinamik** paraqet shpërndarjen e shitjeve sipas kategorive të produkteve (Furniture, Office Supplies, Technology). Vizualizimi lejon identifikimin e kategorisë me kontributin më të lartë në shitje dhe ndryshon automatikisht sipas filtrave të zgjedhur.
+
+<img width="448" height="250" alt="image" src="https://github.com/user-attachments/assets/6f5e8b35-c677-4f23-ab75-7595b1815240" />
+
+### 3. Analiza Kohore e Shitjeve
+
+Është përdorur një **line chart dinamik** për të analizuar trendin e shitjeve gjatë viteve. Ky vizualizim mundëson vëzhgimin e rritjes ose rënies së shitjeve në kohë dhe reagon ndaj filtrimit sipas rajonit, segmentit dhe datës së porosisë.
+
+<img width="423" height="255" alt="image" src="https://github.com/user-attachments/assets/92e1e495-8728-413c-bc60-97ee5694fda0" />
+
+
+### 4. Vizualizimi Shumë-dimensional (Delivery Days vs Sales)
+
+Është ndërtuar një **scatter plot dinamik**, ku paraqitet marrëdhënia ndërmjet **Delivery_Days** dhe **Sales_original**, me ndarje sipas **Category**. Ky vizualizim mundëson analizën e ndikimit të kohës së dorëzimit në vlerën e shitjeve dhe përfaqëson një analizë shumë-dimensionale të të dhënave.
+
+<img width="659" height="258" alt="image" src="https://github.com/user-attachments/assets/69e14ffc-80bc-4877-877f-a5fbd45ea665" />
+
+
+### 5. KPI Cards Dinamike
+
+Në dashboard janë shtuar **KPI Cards dinamike** për:
+- **Total Sales** (shuma totale e shitjeve)
+- **Average Delivery Days** (mesatarja e ditëve të dorëzimit)
+
+Këto KPI reagojnë në kohë reale ndaj të gjitha filtrave dhe ofrojnë një përmbledhje të menjëhershme të performancës së shitjeve.
+
+<img width="240" height="222" alt="image" src="https://github.com/user-attachments/assets/288eb934-d551-4933-bb83-639bc926ef3b" />
+
+  
+### 6. Ndërveprimi dhe Filtrimi Dinamik
+
+Dashboard-i përfshin **slicers dinamike** për:
+- Rajonin (Region)
+- Segmentin e klientëve (Segment)
+- Datën e porosisë (Order Date)
+
+Përdoruesi mund të filtrojë të dhënat dhe të analizojë ndikimin e këtyre filtrave në të gjitha vizualizimet njëkohësisht, duke përfituar një përvojë plotësisht interaktive.
+
+<img width="793" height="143" alt="image" src="https://github.com/user-attachments/assets/b0ed0bd8-1f4e-433d-acd9-dd2d4f153a4f" />
+
 
 ## Konkluzioni
-Pas procesit të pastrimit dhe mënjanimit të vlerave përjashtuese, dataset-i i shitjeve paraqet një strukturë më të qëndrueshme dhe më përfaqësuese të sjelljes reale të porosive duke qene më i besueshëm për analiza të mëtejshme, duke eliminuar porositë ekstreme që nuk përfaqësojnë sjelljen tipike të procesit të shitjes dhe dërgesës, ndërkohë që ruhen vlerat e larta të shitjeve që janë pjesë e performancës normale të bizneseve dhe rajoneve të ndryshme.
+Të gjitha vizualizimet në këtë fazë janë **dinamike**, **interaktive** dhe të ndërtuara për të mbështetur analizën eksploruese të të dhënave. Përdorimi i Microsoft Power BI ka mundësuar analizë të avancuar shumë-dimensionale dhe interpretim të qartë të rezultateve.
+
 
 
 ## Author
