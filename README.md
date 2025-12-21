@@ -207,7 +207,8 @@ Përdoruesi mund të filtrojë të dhënat dhe të analizojë ndikimin e këtyre
 
 
 ## Konkluzioni
-Të gjitha vizualizimet në këtë fazë janë **dinamike**, **interaktive** dhe të ndërtuara për të mbështetur analizën eksploruese të të dhënave. Përdorimi i Microsoft Power BI ka mundësuar analizë të avancuar shumë-dimensionale dhe interpretim të qartë të rezultateve.
+Ky projekt ka demonstruar një qasje të plotë për analizën e të dhënave, duke përfshirë përgatitjen e të dhënave, analizën dhe vizualizimin e tyre. Përmes përdorimit të teknikave të ndryshme analitike dhe vizualizimeve dinamike në Microsoft Power BI, është mundësuar interpretim i qartë i rezultateve dhe analizë shumë-dimensionale e të dhënave. Zgjidhja e realizuar ofron një pamje të strukturuar dhe interaktive për eksplorimin e të dhënave.
+
 
 
 
