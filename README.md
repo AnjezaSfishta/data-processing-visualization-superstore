@@ -163,27 +163,36 @@ Vizualizimi i të dhënave në këtë projekt është realizuar përmes **Micros
 <img width="418" height="277" alt="image" src="https://github.com/user-attachments/assets/38bb801e-8b77-41a4-b81c-1a2804cd14de" />
 
 
-### 2. Vizualizimi i Shitjeve sipas Kategorisë
+### 2. Vizualizimi i Shitjeve Mesatare sipas Kategorisë
 
-Është përdorur një **bar chart horizontal dinamik** paraqet shpërndarjen e shitjeve sipas kategorive të produkteve (Furniture, Office Supplies, Technology). Vizualizimi lejon identifikimin e kategorisë me kontributin më të lartë në shitje dhe ndryshon automatikisht sipas filtrave të zgjedhur.
-
-<img width="448" height="250" alt="image" src="https://github.com/user-attachments/assets/6f5e8b35-c677-4f23-ab75-7595b1815240" />
-
-### 3. Analiza Kohore e Shitjeve
-
-Është përdorur një **line chart dinamik** për të analizuar trendin e shitjeve gjatë viteve. Ky vizualizim mundëson vëzhgimin e rritjes ose rënies së shitjeve në kohë dhe reagon ndaj filtrimit sipas rajonit, segmentit dhe datës së porosisë.
-
-<img width="423" height="255" alt="image" src="https://github.com/user-attachments/assets/92e1e495-8728-413c-bc60-97ee5694fda0" />
+Është përdorur një **bar chart horizontal dinamik** për të paraqitur **shitjet mesatare (Average of Sales_original)** sipas kategorive të produkteve (**Furniture, Office Supplies, Technology**). Ky vizualizim lehtëson identifikimin e kategorisë me vlerën më të lartë mesatare të shitjeve dhe ndryshon automatikisht në varësi të filtrave të aplikuar, duke mbështetur analizë krahasuese ndërmjet kategorive.
 
 
-### 4. Vizualizimi Shumë-dimensional (Delivery Days vs Sales)
+<img width="443" height="246" alt="image" src="https://github.com/user-attachments/assets/1ad277f5-7ac9-4b9d-b33e-6544b5ceba3f" />
+
+### 3. Top 5 Nën-kategoritë sipas Shitjeve
+
+Për të paraqitur **pesë (5) nën-kategoritë me shitjet më të larta totale (Sum of Sales_original)** është përdorur një **bar chart horizontal dinamik**. Ky vizualizim mundëson identifikimin e produkteve më të suksesshme, si p.sh. *Phones*, *Chairs*, *Storage*, *Accessories* dhe *Tables*, duke ofruar një pasqyrë të qartë të kontributit të tyre në shitjet totale.
+
+<img width="313" height="259" alt="image" src="https://github.com/user-attachments/assets/286fb207-fce8-4ea2-b972-103c8ad35875" />
+
+
+### 4. Analiza Kohore e Shitjeve
+
+Për analizën e ndryshimeve të shitjeve ndër vite është përdorur një **line chart dinamik**, i cili paraqet **shitjet mesatare (Average of Sales_original)** për secilin vit. Nga vizualizimi vërehet një rënie e lehtë e shitjeve në vitin 2016 krahasuar me 2015, e ndjekur nga një rritje në vitin 2017, ndërsa në vitin 2018 shihet një rënie më e theksuar. Ky vizualizim mundëson identifikimin e trendeve kohore dhe reagon ndaj filtrimit sipas **rajonit**, **segmentit** dhe **datës së porosisë**, duke ofruar analizë kohore të personalizuar.
+
+
+<img width="421" height="246" alt="image" src="https://github.com/user-attachments/assets/c64a3cff-8a31-4d73-8ead-c1fbe3bc858d" />
+
+
+### 5. Vizualizimi Shumë-dimensional (Delivery Days vs Sales)
 
 Është ndërtuar një **scatter plot dinamik**, ku paraqitet marrëdhënia ndërmjet **Delivery_Days** dhe **Sales_original**, me ndarje sipas **Category**. Ky vizualizim mundëson analizën e ndikimit të kohës së dorëzimit në vlerën e shitjeve dhe përfaqëson një analizë shumë-dimensionale të të dhënave.
 
 <img width="659" height="258" alt="image" src="https://github.com/user-attachments/assets/69e14ffc-80bc-4877-877f-a5fbd45ea665" />
 
 
-### 5. KPI Cards Dinamike
+### 6. KPI Cards Dinamike
 
 Në dashboard janë shtuar **KPI Cards dinamike** për:
 - **Total Sales** (shuma totale e shitjeve)
@@ -194,7 +203,7 @@ Këto KPI reagojnë në kohë reale ndaj të gjitha filtrave dhe ofrojnë një p
 <img width="240" height="222" alt="image" src="https://github.com/user-attachments/assets/288eb934-d551-4933-bb83-639bc926ef3b" />
 
   
-### 6. Ndërveprimi dhe Filtrimi Dinamik
+### 7. Ndërveprimi dhe Filtrimi Dinamik
 
 Dashboard-i përfshin **slicers dinamike** për:
 - Rajonin (Region)
